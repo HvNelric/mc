@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'mc';
+  src:
+  url('/src/assets/fonts/mc.ttf')
+    url('/src/assets/fonts/mc.ttf?49zacr') format('truetype'),
+    url('/src/assets/fonts/mc.woff?49zacr') format('woff'),
+    url('/src/assets/fonts/mc.svg?49zacr#mc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mc' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-triangle-up:before {
+  content: "\e900";
+}
+.icon-triangle-right:before {
+  content: "\e901";
+}
+.icon-triangle-left:before {
+  content: "\e902";
+}
+.icon-triangle-down:before {
+  content: "\e903";
+}
+.icon-dots:before {
+  content: "\e904";
+}
+.icon-plus:before {
+  content: "\e905";
+}
+.icon-prediction:before {
+  content: "\e906";
+}
+.icon-cancel:before {
+  content: "\e907";
+}
+.icon-verified:before {
+  content: "\e908";
+}
+.icon-check:before {
+  content: "\e909";
+}
+.icon-star:before {
+  content: "\e90a";
+}
+.icon-right:before {
+  content: "\e90b";
+}
+.icon-left:before {
+  content: "\e90c";
+}
+.icon-time:before {
+  content: "\e90d";
+}
+.icon-question:before {
+  content: "\e90e";
+}

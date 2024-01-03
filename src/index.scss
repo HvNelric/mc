@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "regular";
+  src:
+    url("./assets/fonts/Poppins-Regular.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "bold";
+  src:
+    url("./assets/fonts/Poppins-Bold.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "extra-bold";
+  src:
+    url("./assets/fonts/Poppins-ExtraBold.ttf") format("truetype")
+}
+
+:root {
+  --bleu-btn: #0030FF;
+  --bleu-title: #000F50;
+  --bleu-contour: #76BAFF;
+  --bleu-icon: #0064C7;
+  --bleu-clair: #EDF6FF;
+  --gris-contour: #BFBFBF;
+  --gris-font: #4a4a4a;
+  --gris-font2: #676767;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'regular';
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: black;
+  font-family: 'bold';
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-family: 'extra-bold';
+  line-height: 38px;
+  color: black;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 34px;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 28px;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 28px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  line-height: 28px;
+}
+
+h5 {
+  font-size: 1.6rem;
+  line-height: 24px;
+}
+
+p {
+  font-family: 'regular';
+  font-size: 1.6rem;
+}
+
+/** PICTOS ********************/
+/******************************/
+@font-face {
+  font-family: 'mc';
+  src:
+  url('./assets/fonts/mc.ttf')
+    url('./assets/fonts/mc.ttf?49zacr') format('truetype'),
+    url('./assets/fonts/mc.woff?49zacr') format('woff'),
+    url('./assets/fonts/mc.svg?49zacr#mc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mc' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-triangle-up:before {
+  content: "\e900";
+}
+.icon-triangle-right:before {
+  content: "\e901";
+}
+.icon-triangle-left:before {
+  content: "\e902";
+}
+.icon-triangle-down:before {
+  content: "\e903";
+}
+.icon-dots:before {
+  content: "\e904";
+}
+.icon-plus:before {
+  content: "\e905";
+}
+.icon-prediction:before {
+  content: "\e906";
+}
+.icon-cancel:before {
+  content: "\e907";
+}
+.icon-verified:before {
+  content: "\e908";
+}
+.icon-check:before {
+  content: "\e909";
+}
+.icon-star:before {
+  content: "\e90a";
+}
+.icon-right:before {
+  content: "\e90b";
+}
+.icon-left:before {
+  content: "\e90c";
+}
+.icon-time:before {
+  content: "\e90d";
+}
+.icon-question:before {
+  content: "\e90e";
+}
+/** //PICTOS ******************/
+/******************************/
+
+
+.grid {
+  display: grid;
+  gap: 20px;
+
+  &.col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &.col-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &.col-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

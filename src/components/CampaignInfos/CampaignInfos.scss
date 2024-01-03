@@ -1,0 +1,37 @@
+.campaign-infos-container {
+    padding: 30px 30px 60px 30px;
+    display: flex;
+    justify-content: space-between;
+    background: var(--bleu-clair);
+    border: 1px solid var(--gris-contour);
+    border-radius: 4px;
+    position: relative;
+
+    h3 {
+        margin: 0;
+    }
+
+    .infos-question {
+        padding-right: 30px;
+    }
+
+    .infos-date {
+
+        .date-end {
+            color: var(--gris-font2);
+            font-size: 1.4rem;
+            line-height:  22px;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .btn {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+}

@@ -1,0 +1,186 @@
+.ask-card {
+    padding: 25px;
+    border: 1px solid var(--gris-contour);
+    border-radius: 4px;
+    box-shadow: 0 0 10px #0000000D;
+    position: relative;
+    overflow: hidden;
+
+    &.question-card {
+        height: 278px;
+    }
+
+    .type {
+        margin-bottom: 16px;
+        color: var(--gris-font);
+        font-size: 1.4rem;
+        line-height: 16px;
+        margin-bottom: 15px;
+
+        &.type-resultat::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            background: var(--bleu-btn);
+            vertical-align: middle;
+        }
+    }
+
+    .title {
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        display: -webkit-box;
+        height: 96px;
+
+        &.title-result {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            margin-bottom: 118px;
+            -webkit-line-clamp: 3;
+            height: 84px;
+        }
+    }
+
+    .tags {
+        margin-bottom: 65px;
+
+        .tag {
+            padding: 6px 12px;
+            color: var(--bleu-icon);
+            background: var(--bleu-clair);
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 1.2rem;
+            line-height: 16px;
+            text-transform: capitalize;
+            border: 1px solid var(--bleu-contour);
+            
+            &:not(:last-of-type) {
+                margin-right: 5px;
+            }
+        }
+
+        .tag-number {
+            position: relative;
+
+            .tooltip {
+                position: absolute;
+                top: calc(100% + 10px);
+                left: 50%;
+                transform: translateX(-50%);
+                background: var(--bleu-clair);
+                display: none;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                padding: 6px 12px;
+                border-radius: 50px;
+                width: max-content;
+                transition: .3s ease;
+                z-index: 10;
+
+                &::after {
+                    content: '';
+                    display : inline-block;
+                    height : 0;
+                    width : 0;
+                    border-right : 5px solid transparent;
+                    border-bottom : 9px solid var(--bleu-clair);
+                    border-left : 5px solid transparent;
+                    position: absolute;
+                    top: -8px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                
+                & > div {
+                    width: fit-content;
+                    flex: 0 0 auto;
+
+                    &:not(:last-of-type) {
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            &:hover {
+                
+                .tooltip {
+                    display: flex;
+                    transition: .3s ease;
+                }
+            }
+        }
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+
+        &.response-btnwrapper {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 25px;
+            background: white;
+            padding-top: 40px;
+            margin-bottom: -100%;
+            transition: .3s ease;
+        }
+    }
+
+    &:hover {
+        .btn-wrapper {
+    
+            &.response-btnwrapper {
+                margin-bottom: 0;
+                transition: .3s ease;
+            }
+        }
+    }
+
+
+
+    .opt-text-wrapper {
+
+        & > div:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+
+        i {
+            font-size: 1.6rem;
+            color: var(--gris-contour);
+            margin-right: 15px;
+        }
+
+        strong {
+            font-family: 'bold';
+        }
+
+        .result-number,
+        .result-date,
+        .predict,
+        .experts,
+        .bottom-text {
+            font-size: 1.4rem;
+            line-height: 16px;
+        }
+
+        .predict {
+
+            i {
+                font-size: 1.4rem;
+            }
+        }
+
+        .experts {
+
+            i {
+                color: var(--bleu-icon);
+            }
+        }
+    }
+}
